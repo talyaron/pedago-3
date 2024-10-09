@@ -1,28 +1,26 @@
 export function renderRegister(): string {
     try {
         return `
-        <div>
         <div class="container">
-        <h1>Register</h1>
-        <form id="registerForm" class="mb-3">
-            <label for="fullName">Full Name:</label><br>
-            <input type="text"   class="form-control"  id="fullName" name="fullName" required><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            
-            <label for="phone">Phone:</label><br>
-            <input type="text" id="phone" name="phone" required><br>
-
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br>
-
-            <label for="repeatPassword">Repeat Password:</label><br>
-            <input type="password" id="repeatPassword" name="repeatPassword" required><br>
-
-            <button type="submit">Register</button>
-        </form>
-        </div>
+            <h1 class="display-4 text-center">Register</h1>
+            <form id="registerForm" class="mb-3">
+                <label for="fullName"></label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required placeholder="Full Name:">
+                
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Email:">
+                
+                <label for="phone"></label>
+                <input type="text" class="form-control" id="phone" name="phone" required placeholder="Phone:">
+                
+                <label for="password"></label>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="Password:">
+                
+                <label for="repeatPassword"></label>
+                <input type="password" class="form-control" id="repeatPassword" name="repeatPassword" required placeholder="Repeat Password:">
+                
+                <button class="btn btn-primary w-100 mt-3" type="submit">Register</button>
+            </form>
         </div>
     `;
     } catch (error) {
@@ -30,4 +28,3 @@ export function renderRegister(): string {
         return "";
     }
 }
-
