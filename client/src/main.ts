@@ -8,3 +8,7 @@ import { renderExamplePage } from './view/examplePage/ExamplePage.ts'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderExamplePage();
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+
+import { renderSubjectsPage } from './view/examplePage/SubjectsPage';
+
+renderSubjectsPage();
