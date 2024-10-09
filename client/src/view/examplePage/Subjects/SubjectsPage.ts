@@ -1,4 +1,4 @@
-export function renderSubjectsPage(): void {
+export function renderSubjectsPage(): string {
     try {
       // Create container
       const container = document.createElement('div');
@@ -51,7 +51,7 @@ export function renderSubjectsPage(): void {
   
       // Create subject list title
       const subjectTitle = document.createElement('h2');
-      subjectTitle.textContent = 'SubjectList';
+      subjectTitle.textContent = 'Subject List';
       subjectTitle.style.textAlign = 'center';
       subjectTitle.style.marginBottom = '20px';
       subjectList.appendChild(subjectTitle);
@@ -72,7 +72,7 @@ export function renderSubjectsPage(): void {
         subjectButton.style.fontSize = '1.2em';
         subjectButton.style.cursor = 'pointer';
         subjectButton.style.boxShadow = '0px 3px 5px rgba(0, 0, 0, 0.2)';
-        
+  
         // Add hover effect
         subjectButton.addEventListener('mouseover', () => {
           subjectButton.style.backgroundColor = '#809fff';
@@ -88,10 +88,11 @@ export function renderSubjectsPage(): void {
   
         subjectList.appendChild(subjectButton);
       });
+  
+      return ''; // Returning empty string for compatibility
     } catch (error) {
       console.error(error);
+      return ''; // Return empty string on error
     }
   }
   
-
-
