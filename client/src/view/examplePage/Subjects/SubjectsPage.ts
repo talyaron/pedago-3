@@ -89,10 +89,10 @@ export function renderSubjectsPage(): string {
         subjectList.appendChild(subjectButton);
       });
   
-      return ''; // Returning empty string for compatibility
+      return ''; 
     } catch (error) {
       console.error(error);
-      return ''; // Return empty string on error
+      return ''; 
     }
   }
   
