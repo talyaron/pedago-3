@@ -1,0 +1,81 @@
+
+.container {
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    margin-left: 0;
+  }
+  
+  .sidebar {
+    background-color: #024c8c;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+
+  }
+
+  .title{
+    background-color: #024c8c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    margin-left: 8vw;
+    width: 18.4vw;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    margin-left: -2vw;
+    margin-top: -7vh;
+    cursor: pointer;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin-left: -2vw;
+    margin-top: -10vh;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .content {
+    background-color: #e0e7f1;
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .subject-list {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+  }
+  
+  .subject-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .subject-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #b3c6ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .subject-button:hover {
+    background-color: #809fff;
+  }
+  

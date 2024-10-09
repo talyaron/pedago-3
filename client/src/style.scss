@@ -1,4 +1,5 @@
-
+@import "bootstrap/scss/bootstrap";
+@import"./view/examplePage/Subjects/subjects.scss";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,7 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import "bootstrap/scss/bootstrap";
+
 
 a {
   font-weight: 500;
