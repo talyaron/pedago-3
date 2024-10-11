@@ -23,30 +23,34 @@ format(){
 
 
 }
-const mail = document.querySelector('mail')! as HTMLInputElement;
-const form = document.querySelector('register')! as HTMLInputElement;
-const name = document.querySelector('name')! as HTMLInputElement;
-const phone = document.querySelector('Phone')! as HTMLInputElement;
-const password = document.querySelector('Password')! as HTMLInputElement;
-const password2 = document.querySelector('ps')! as HTMLInputElement;
+const mail = document.querySelector('#mail')! as HTMLInputElement;
+const form = document.querySelector('#register')! as HTMLInputElement;
+const name = document.querySelector('#name')! as HTMLInputElement;
+const phone = document.querySelector('#Phone')! as HTMLInputElement;
+const password = document.querySelector('#Password')! as HTMLInputElement;
+const password2 = document.querySelector('#ps')! as HTMLInputElement;
+
 
 form.addEventListener('submit',(e:Event)=>
 {
 e.preventDefault();
 const student = new Student(name.value, phone.valueAsNumber, password.value, password2.value, mail.value)!;
+
 const students:Stud[]=[];
 students.push(student);
-
+console.log(students);
 }
-)
+);
 
 
-class StudentInfo{
-    constructor(private container:HTMLUListElement){
+// export class StudentInfo{
+//     constructor(private container:HTMLElement){
 
-    }
-    const stud = document.querySelector('#stud')!;
-
-    stud.append(students);
-}
-
+//     }
+//     render(student:Stud){
+//     const stud = document.querySelector('#stud')! as HTMLElement;
+//     const students:Stud[]=[];
+//     students.push(student);
+//     stud.innerHTML=`students`;
+// }
+// }
