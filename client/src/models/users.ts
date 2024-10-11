@@ -1,9 +1,14 @@
+import { Course } from "./Course";
+
 export class User {
     fullName: string;
     id : string;
     email: string;
     password: string;
     phone?: string;
+    courses: string[] = [
+        "AlgebraCourseId"
+    ];
 
     constructor (fullName: string, email: string, password: string, phone: string) {
     {
@@ -19,6 +24,7 @@ export class User {
 }
 
 export const users: User[] = [];
+
 
 
 
