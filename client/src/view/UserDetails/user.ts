@@ -1,4 +1,4 @@
-export function renderUserDetails():any {
+export function renderUserDetails():string {
     return `
     <div class="container text-center">
   <div class="row">
