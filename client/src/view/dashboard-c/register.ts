@@ -43,14 +43,14 @@ console.log(students);
 );
 
 
-// export class StudentInfo{
-//     constructor(private container:HTMLElement){
+export class StudentInfo{
+    constructor(private container:HTMLElement){
 
-//     }
-//     render(student:Stud){
-//     const stud = document.querySelector('#stud')! as HTMLElement;
-//     const students:Stud[]=[];
-//     students.push(student);
-//     stud.innerHTML=`students`;
-// }
-// }
+    }
+    render(student:Stud){
+    const stud = document.createElement('#stud')! as HTMLElement;
+    const students:string[]=[];
+    students.push(student);
+    stud.innerHTML=students;
+}
+}
