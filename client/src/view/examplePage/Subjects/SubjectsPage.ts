@@ -2,9 +2,9 @@ export function renderSubjectsPage(): string {
   try {
     return `
     <div class="title"></div>
-     <div class="container-fluid">
-       <div class="row">
-         <aside class="col-md-3 bg-primary text-white vh-100">
+     <div class="container-fluid vh-100 vw-100 d-flex flex-column">
+       <div class="row flex-grow-1">
+         <aside class="col-md-3 bg-primary text-white vh-100"style="width:100px">
            <div class="p-4">
              <div class="fs-3 mb-4 logo">LOGO</div>
              <ul class="nav flex-column menu">
@@ -17,7 +17,7 @@ export function renderSubjectsPage(): string {
            </div>
          </aside>
          <main class="col-md-9 bg-light">
-           <div class="container py-5"style="margin-top: 15vh;">
+           <div class="container py-5"style="margin-top: 15vh;width:40vw">
              <div class="card shadow p-4">
                <h2 class="card-title text-center mb-4">Subject List</h2>
                <div class="d-grid gap-3">
