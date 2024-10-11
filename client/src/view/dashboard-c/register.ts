@@ -1,6 +1,8 @@
 
-
-export class Student{
+export interface Stud{
+format():string;
+}
+export class Student implements Stud{
     name:string;
     phone:number;
     password:string;
@@ -15,6 +17,9 @@ this.password2=pass2;
 this.mail=m;
 }
 
+format(){
+    return `${name.value, phone.valueAsNumber, password.value, password2.value, mail.value}`
+}
 
 
 }
@@ -25,12 +30,23 @@ const phone = document.querySelector('Phone')! as HTMLInputElement;
 const password = document.querySelector('Password')! as HTMLInputElement;
 const password2 = document.querySelector('ps')! as HTMLInputElement;
 
-const student = new Student(name.value, phone.valueAsNumber, password.value, password2.value, mail.value);
-
 form.addEventListener('submit',(e:Event)=>
 {
 e.preventDefault();
+const student = new Student(name.value, phone.valueAsNumber, password.value, password2.value, mail.value)!;
+const students:Stud[]=[];
+students.push(student);
 
 }
 )
+
+
+class StudentInfo{
+    constructor(private container:HTMLUListElement){
+
+    }
+    const stud = document.querySelector('#stud')!;
+
+    stud.append(students);
+}
 
