@@ -1,3 +1,6 @@
+import imgStudent from './images/student.jpeg'
+import imgProgress from './images/progress.png'
+
 export function renderUserDetails():string {
     return `
     <div class="container text-center">
@@ -8,10 +11,10 @@ export function renderUserDetails():string {
     <h2 class="display-6"> last entered:<span class="badge text-bg-secondary">10/10/2024</span>
     </div>
     <div class="col">
-    <img src="./images/student.jpeg" alt="User's Image">
+    <img src=${imgStudent} alt="User's Image">
     </div>
     <div class="col">
-    <img src="./images/progress.jpg" alt="progress">
+    <img src=${imgProgress} alt="progress">
     </div>
   </div>
 </div>
