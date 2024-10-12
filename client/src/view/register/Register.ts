@@ -2,24 +2,30 @@ export function renderRegister(): string {
     try {
         return `
         <div class="container">
-            <h1 class="display-4 text-center">Register</h1>
-            <form id="registerForm" class="mb-3">
+               <img class="back-image" src="./src/images/back-image.png" alt="back image">
+            <h1>Register</h1>
+            <form id="registerForm">
                 <label for="fullName"></label>
-                <input type="text" class="form-control" id="fullName" name="fullName" required placeholder="Full Name:">
+                <input type="text" id="fullName" name="fullName" required placeholder="Full Name:">
                 
                 <label for="email"></label>
-                <input type="email" class="form-control" id="email" name="email" required placeholder="Email:">
+                <input type="email"  id="email" name="email" required placeholder="Email:">
                 
                 <label for="phone"></label>
-                <input type="text" class="form-control" id="phone" name="phone" required placeholder="Phone:">
+                <input type="text" id="phone" name="phone" required placeholder="Phone:">
                 
                 <label for="password"></label>
-                <input type="password" class="form-control" id="password" name="password" required placeholder="Password:">
+                <input type="password"  id="password" name="password" required placeholder="Password:">
                 
                 <label for="repeatPassword"></label>
-                <input type="password" class="form-control" id="repeatPassword" name="repeatPassword" required placeholder="Repeat Password:">
-                
-                <button class="btn btn-primary w-100 mt-3" type="submit">Register</button>
+                <input type="password id="repeatPassword" name="repeatPassword" required placeholder="Repeat Password:">
+                 <div class="terms">
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+            <label for="agreeTerms">I agree to the  <a href="#">Terms and Conditions</a></label>
+        </div>
+                <button class="btn" type="submit">Register</button>
+                <button class="btn" type="submit">Back to login</button>
+
             </form>
         </div>
     `;
