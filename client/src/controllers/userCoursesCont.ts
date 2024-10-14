@@ -1,7 +1,7 @@
-import { Course, courses } from "../models/Course";
+import { Course, courses } from "../models/entities/Course";
 import { userCourses,UserCourse } from "../models/joinTables/usersCoursesModel";
 
-import { User } from "../models/users"
+import { User } from "../models/entities/users"
 
 export function getUserCourses(user: User):Course[] {
     try {

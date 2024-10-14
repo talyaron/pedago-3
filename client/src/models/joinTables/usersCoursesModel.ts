@@ -1,5 +1,5 @@
-import { Course,courses } from "../Course";
-import { User, users } from "../users";
+import { Course,courses } from "../entities/Course";
+import { User, users } from "../entities/users";
 
 // join Table
 export interface UserCourse {

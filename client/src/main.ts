@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './style.scss'
 
 import { registerUsers } from './models/joinTables/usersCoursesModel.ts';
-import { users } from './models/users.ts';
+import { users } from './models/entities/users.ts';
 import { getUserCourses } from './controllers/userCoursesCont.ts';
 import { renderUserCourses } from './view/userCouses/UserCoursesView.ts';
 

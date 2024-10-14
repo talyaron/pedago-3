@@ -1,5 +1,5 @@
-import { Course } from "./Course";
-import { Subject } from "./Subject";
+import { Course } from "../entities/Course";
+import { Subject } from "../entities/Subject";
 
 export interface CourseSubjects{
     course:Course;
