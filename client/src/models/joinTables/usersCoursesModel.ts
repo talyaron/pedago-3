@@ -7,32 +7,32 @@ export interface UserCourse {
     courseId: string;
 }
 
-export const userCourses: UserCourse[] = [
+export const usersCourses: UserCourse[] = [
  
 ]
 
 export function registerUsers() {
-    userCourses.push(
+    usersCourses.push(
         {
         userId:users.find((user:User) => user.fullName == "Aviad")!.id,
         courseId:courses.find((course:Course) => course.name === "Algebra Linear")!.id
         });
-    userCourses.push(
+    usersCourses.push(
         {
             userId:users.find((user:User) => user.fullName == "Rana")!.id,
             courseId:courses.find((course:Course) => course.name === "Algebra Linear")!.id
         });
-    userCourses.push(
+    usersCourses.push(
         {
             userId:users.find((user:User) => user.fullName == "Rana")!.id,
             courseId:courses.find((course:Course) => course.name === "Geometry")!.id
         });
-    userCourses.push(
+    usersCourses.push(
         {
             userId:users.find((user:User) => user.fullName == "Rana")!.id,
             courseId:courses.find((course:Course) => course.name === "Arts")!.id
         });
-    userCourses.push(
+    usersCourses.push(
         {
             userId:users.find((user:User) => user.fullName == "Yonatan")!.id,
             courseId:courses.find((course:Course) => course.name === "Arts")!.id
