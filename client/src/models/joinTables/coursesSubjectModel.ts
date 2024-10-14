@@ -7,3 +7,4 @@ export interface CourseSubjects{
 }
 
 export const courseSubjects:CourseSubjects[]=[];
+

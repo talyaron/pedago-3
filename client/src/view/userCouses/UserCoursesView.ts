@@ -1,5 +1,4 @@
 import { Course } from "../../models/entities/Course";
-import { User } from "../../models/entities/users";
 
 export function renderUserCourses(courses:Course[]) {
     return `
