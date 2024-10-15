@@ -1,4 +1,4 @@
-import { Subject } from "./entities/Subject";
+import { Subject } from "./Subject";
 
 export interface subjectPuzzle{
     puzzle:Puzzle; //waiting for yosef to push

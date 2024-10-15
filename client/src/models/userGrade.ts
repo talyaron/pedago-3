@@ -1,6 +1,6 @@
-import { Subject } from "../Subject";
-import { Course } from "../entities/Course";
-import { User, users } from "../entities/users";
+import { Subject } from "./Subject";
+import { Course } from "./Course";
+import { User, users } from "./users";
 
 export interface UserGrade{
     //puzzleID : puzzle;
