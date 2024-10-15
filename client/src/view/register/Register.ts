@@ -27,4 +27,5 @@ export function renderRegister(): string {
         console.error(error);
         return "";
     }
+    
 }
