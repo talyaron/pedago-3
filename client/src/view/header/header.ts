@@ -1,4 +1,3 @@
-import './header.scss'
 export function renderHeader(): string
 {
     return `
