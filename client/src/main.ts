@@ -1,7 +1,33 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+import { renderRegister } from './view/register/Register.ts';
+import { renderUserDetails } from'./view/UserDetails/user.ts';
+=======
+>>>>>>> upstream/main
+
+
+
+import './style.scss';
+=======
+>>>>>>> upstream/main
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './style.scss'
 
+<<<<<<< HEAD
+import { setupCounter } from './counter.ts'
+import { renderHeader } from './view/header/header.ts';
+
+<<<<<<< HEAD
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderRegister();
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderUserDetails();
+
+=======
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderHeader();
+>>>>>>> upstream/main
+
+setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+=======
 import { courses } from './models/entities/Course.ts';
 import { getCourseSubjects } from './controllers/courseSubjectsCont.ts';
 import { testCourseSubjects } from './models/joinTables/coursesSubjectModel.ts';
@@ -58,5 +84,6 @@ function renderFirstPage(courseId?: string) {
         return ""
     }
 }
+>>>>>>> upstream/main
 
 
